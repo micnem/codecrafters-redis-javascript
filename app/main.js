@@ -8,7 +8,10 @@ const server = net.createServer((connection) => {
     connection.on("data", (data) => {
         console.log('starting!!!!')
         console.log(data.toString())
-    })
+        if(data.toString() == 'ping'){
+            console.log('YESSSS')
+        }
+    
 });
 
 server.listen(6379, "127.0.0.1");
