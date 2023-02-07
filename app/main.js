@@ -7,7 +7,7 @@ console.log("Logs from your program will appear here!");
 const server = net.createServer((connection) => {
     connection.on("data", (data) => {
         console.log('starting!!!!')
-        console.log(data)
+        console.log(data.toString())
     })
 });
 
